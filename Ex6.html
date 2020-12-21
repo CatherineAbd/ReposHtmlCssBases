@@ -9,38 +9,62 @@
         <form method ="post" action="traitement.php">
             <fieldset>
                 <legend>Votre identité</legend>
-                <label for="nom">1.Nom :</label>
-                <input type="text" name="nom" id="nom" placeholder="Nom"> <br>
-                <label for="prenom">2.Prénom :</label>
-                <input type="text" name="prenom" id="prenom" placeholder="Prénom"><br>
-                <label for="email">3.Adresse mail:</label>
-                <input type="e-mail" name="email" id="email" placeholder="Adresse mail">
+                <ol>
+                    <li>
+                        <label for="nom">Nom :</label>
+                        <input type="text" name="nom" id="nom" placeholder="Nom">
+                    </li>
+                    <li>
+                        <label for="prenom">Prénom :</label>
+                        <input type="text" name="prenom" id="prenom" placeholder="Prénom">
+                    </li>
+                    <li>
+                        <label for="email">Adresse mail:</label>
+                        <input type="e-mail" name="email" id="email" placeholder="Adresse mail">
+                    </li>
+            </ol>
             </fieldset>
             <fieldset>
                 <legend>Adresse de livraison</legend>
-                <label for="adresse">1.Adresse :</label>
-                <textarea name="adresse" id="" cols="30" rows="5"></textarea><br>
-                <label for="cp">2.Code postal :</label>
-                <input type="number" name="cp" id="cp" placeholder="Code postal" max="99999"><br>
-                <label for="ville">3.Ville :</label>
-                <input type="text" name="ville" id="ville" placeholder="Ville">
-            </fieldset>
+                <ol>
+                    <li>
+                        <label for="adresse">Adresse :</label>
+                        <textarea name="adresse" id="" cols="30" rows="5"></textarea><br>
+                    </li>
+                    <li>
+                        <label for="cp">Code postal :</label>
+                        <input type="number" name="cp" id="cp" placeholder="75001" max="99999"><br>
+                    </li>
+                    <li>
+                        <label for="ville">Ville :</label>
+                        <input type="text" name="ville" id="ville" placeholder="Ville">
+                    </li>
+                </fieldset>
             <fieldset>
                 <legend>Informations de règlement</legend>
-                <p>1. Type de carte bancaire :</p>
-                <ul>
-                    <li><input type="radio" name="typ_rg" value="visa" id="visa">
-                    <label for="visa">VISA</label></li>
-                    <li><input type="radio" name="typ_rg" value="master" id="master">
-                    <label for="master">MasterCard</label></li>
-                </ul>
-                <label for="num_carte">2. Numéro de carte :</label>
-                <input type="number" name="num_carte" id="num_carte" placeholder="Numéro de carte"><br>
-                <label for="code_secu">3. Code de sécurité :</label>
-                <input type="number" name="code_secu" id="code_secu" placeholder="Code de sécurité"><br>
-                <label for="nom_tit">4. Nom titulaire :</label>
-                <input type="text" name="nom_tit" id="nom_tit" placeholder="Nom du titulaire">
-            </fieldset>
+                <ol>
+                    <li>
+                        <p>Type de carte bancaire :</p>
+                        <ul>
+                            <li><input type="radio" name="typ_rg" value="visa" id="visa">
+                            <label for="visa">VISA</label></li>
+                            <li><input type="radio" name="typ_rg" value="master" id="master">
+                            <label for="master">MasterCard</label></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="num_carte">Numéro de carte :</label>
+                        <input type="number" name="num_carte" id="num_carte" placeholder="Numéro de carte"><br>
+                    </li>
+                    <li>
+                        <label for="code_secu">Code de sécurité :</label>
+                        <input type="number" name="code_secu" id="code_secu" placeholder="Code de sécurité"><br>
+                    </li>
+                    <li>
+                        <label for="nom_tit">Nom titulaire :</label>
+                        <input type="text" name="nom_tit" id="nom_tit" placeholder="Nom du titulaire">
+                    </li>
+                </fieldset>
             <input type="submit" value="J'achète">
         </form>
     </body>
